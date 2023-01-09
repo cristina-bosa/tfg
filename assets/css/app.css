@@ -1,0 +1,68 @@
+@import url(__text.css);
+@import url(__buttons.css);
+@import url(__margens.css);
+:root{
+    --primary: #E5004F;
+    --white: #FFF;
+    --dark: #272726;
+    --gray: #9EA1A2;
+    --light: #F3F1F1;
+    --ptb: 80px;
+    --obvia-expanded: obvia-expanded, sans-serif;
+    --obvia-regular: obvia, sans-serif;
+    --imb-plex-sans: ibm-plex-sans, sans-serif;
+
+}
+* {
+    border: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family:  var(--imb-plex-sans) !important;
+    color: var(--dark);
+    font-size: 19px;
+
+}
+#parallax{
+    background-image: url(../img/parallax.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.plr-20{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hero-parallax{
+    background-image: url(../img/crescent.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.blur{
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+.img-fluid{
+    width: 100% !important;
+    height: auto;
+}
+#projects{
+    background-image: url(../img/line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.footer{
+    background-color: var(--primary);
+}
