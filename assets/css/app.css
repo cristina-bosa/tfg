@@ -202,13 +202,33 @@ button:hover::before {
 }
 
 .menu {
-    padding: 15px 30px;
-    gap: 24px;
+    margin-top: 4vh;
     position: fixed;
-    background: var(--primary);
-    border-radius: 16px;
+    left: 52%;
     z-index: 99;
+ 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    width: fit-content;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+li {
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
 
 .menu a {
     color: var(--white);
