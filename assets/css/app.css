@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,12 +35,13 @@
     padding-right: 50px;
 }
 
+
 .hero-parallax{
     background-image: url(../img/crescent.svg);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,3 +162,21 @@ header{
     justify-content: center;
     align-items: center;
 }
+.mt-n1{
+    margin-top: -4.25rem !important;
+}
+.btn-black {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: var(--light);
+    z-index: 1;
+    background: var(--dark);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   
