@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary: #E5004F;
     --white: #FFF;
     --dark: #272726;
@@ -10,16 +10,18 @@
     --imb-plex-sans: ibm-plex-sans, sans-serif;
 
 }
+
 * {
     border: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family:  var(--imb-plex-sans) !important;
+    font-family: var(--imb-plex-sans) !important;
     color: var(--dark);
     font-size: 19px;
 
 }
-#parallax{
+
+#parallax {
     background-image: url(../img/parallax.png);
     display: flex;
     justify-content: center;
@@ -30,14 +32,15 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.plr-20{
+
+.plr-20 {
     padding-left: 50px;
     padding-right: 50px;
 }
 
 
-.hero-parallax{
-    background-image: url(../img/crescent.svg);
+.hero-parallax {
+    background-image: url(../img/crescennt.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,73 +50,95 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.blur{
+
+.blur {
     filter: blur(50px);
     -webkit-filter: blur(50px);
 }
-.img-fluid{
+
+.img-fluid {
     width: 100% !important;
     height: auto;
 }
-#projects{
+
+#projects {
     background-image: url(../img/line.png);
     background-position: center;
     background-repeat: no-repeat;
 
 }
-footer{
+
+footer {
     background-color: var(--primary);
-    
+
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--obvia-expanded) !important;
 }
 
-.text-bold{
+.text-bold {
     font-weight: 800;
 }
-.text-light{
+
+.text-light {
     font-weight: 300;
 }
-.text-color-primary{
+
+.text-color-primary {
     color: var(--primary);
 }
-.text-color-white{
+
+.text-color-white {
     color: var(--white);
 }
-.text-color-gray{
+
+.text-color-gray {
     color: var(--gray) !important;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.link:hover{
+
+.link:hover {
     text-decoration: underline;
     cursor: pointer;
-    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
 }
-.mt-10{
+
+.mt-10 {
     margin-top: 10rem !important;
 }
-.mt-4{
+
+.mt-4 {
     margin-top: 2rem !important;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 4rem !important;
 }
-.mt-7{
+
+.mt-7 {
     margin-top: 5rem !important;
 }
-.mt-8{
+
+.mt-8 {
     margin-top: 6rem !important;
 }
-.mb-10{
+
+.mb-10 {
     margin-bottom: 10rem !important;
 }
-.mr-1{
+
+.mr-1 {
     margin-right: 0.25rem !important;
 }
 
@@ -130,9 +155,9 @@ button {
 
     transition: all 250ms;
     overflow: hidden;
-   }
-   
-   button::before {
+}
+
+button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -142,29 +167,26 @@ button {
     border-radius: 15px;
     background-color: var(--light);
     z-index: -1;
-    transition: all 250ms   ;
+    transition: all 250ms;
     -webkit-transition: all 250ms;
     -moz-transition: all 250ms;
     -ms-transition: all 250ms;
     -o-transition: all 250ms;
 }
-   
-   button:hover {
-    color: var(--primary);
-   }
-   
-   button:hover::before {
-    width: 100%;
-   }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button:hover {
+    color: var(--primary);
 }
-.mt-n1{
+
+button:hover::before {
+    width: 100%;
+}
+
+
+.mt-n1 {
     margin-top: -4.25rem !important;
 }
+
 .btn-black {
     padding: 15px 25px;
     border: unset;
@@ -177,6 +199,32 @@ header{
     font-size: 17px;
     transition: all 250ms;
     overflow: hidden;
-   }
-   
-   
+}
+
+.menu {
+    padding: 15px 30px;
+    gap: 24px;
+    position: fixed;
+    background: var(--primary);
+    border-radius: 16px;
+    z-index: 99;
+}
+
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    font-weight: bold;
+
+}
+
+header {
+    background-image: url(../img/bg-hero.png);
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
