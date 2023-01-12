@@ -30,7 +30,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .plr-20 {
@@ -201,7 +201,7 @@ button:hover::before {
     overflow: hidden;
 }
 
-.menu {
+.menu-desktop, .menu-movil{
     margin-top: 4vh;
     position: fixed;
     left: 52%;
@@ -230,12 +230,12 @@ li {
 }
 
 
-.menu a {
+.menu-desktop a, .menu-movil a{
     color: var(--white);
     text-decoration: none;
 }
 
-.menu a:hover {
+.menu-desktop a:hover {
     font-weight: bold;
 
 }
@@ -247,4 +247,30 @@ header {
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
+}
+.menu-movil{
+    display: none;
+}
+@media only screen and (max-width : 1000px) {
+    .menu-desktop{
+        display: none;
+    }
+    .menu-movil{
+        display: flex;
+    }
+    header{
+        background-image: url(../img/bg-movil.png);
+    }
+    .mb-10{
+        margin-bottom: 5rem !important;
+    }
+    .mt-10{
+        margin-top: 5rem !important;
+    }
+    #projects{
+        margin-top: 10rem !important;
+    }
+    #our{
+        display: none;
+    }
 }
